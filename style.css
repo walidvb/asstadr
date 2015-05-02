@@ -1,0 +1,31 @@
+.w-wrapper{
+  font-family: Helvetica;
+}
+.w-lib{
+    list-style: none;
+    width: 100%;
+    border: 1px #111111 solid;
+    padding: 5px;
+}
+
+.w-name{
+  display: inline-block;
+}
+
+.w-add-library{
+  background-color: #2ECC40;
+}
+.w-more-info{
+  background-color: #7FDBFF;
+}
+.w-add-library, .w-more-info{
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 3px 10px;
+  float: right;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
