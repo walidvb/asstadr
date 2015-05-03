@@ -1,31 +1,100 @@
-.w-wrapper{
-  font-family: Helvetica;
-}
-.w-lib{
+.w-wrapper {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  max-width: 600px;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  -webkit-animation: wSlideTopIn 0.3s ease-out;
+          animation: wSlideTopIn 0.3s ease-out; }
+  .w-wrapper * {
+    box-sizing: border-box; }
+  .w-wrapper ul {
+    margin: 0;
+    -webkit-padding-start: 0; }
+  .w-wrapper input {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .w-wrapper #libraries {
+    max-height: 500px;
+    overflow: auto; }
+  .w-wrapper .lib {
     list-style: none;
     width: 100%;
-    border: 1px #111111 solid;
+    border-bottom: 1px #0074D9 solid; }
+    .w-wrapper .lib.added .header {
+      background-color: #3D9970; }
+  .w-wrapper .header {
     padding: 5px;
-}
+    background-color: #001f3f;
+    color: white;
+    cursor: pointer; }
+    .w-wrapper .header:hover {
+      background-color: #00060c; }
+  .w-wrapper .name {
+    display: inline-block; }
+  .w-wrapper .add-library, .w-wrapper .add {
+    background-color: #2ECC40; }
+  .w-wrapper .add {
+    padding: 3px 6px;
+    margin-right: 5px; }
+  .w-wrapper .more-info {
+    background-color: #7FDBFF; }
+  .w-wrapper .button, .w-wrapper .add-library, .w-wrapper .more-info {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer; }
+  .w-wrapper .add-library, .w-wrapper .more-info {
+    padding: 3px 10px;
+    float: right;
+    margin-right: 5px; }
+  .w-wrapper .more {
+    display: none;
+    padding: 5px;
+    background: #0074D9; }
+  .w-wrapper .desc {
+    display: inline-block;
+    vertical-align: top;
+    width: 57%; }
+  .w-wrapper .sidebar {
+    display: inline-block;
+    width: 40%; }
+  .w-wrapper .homepage {
+    margin-bottom: 10px; }
+    .w-wrapper .homepage a {
+      color: #7FDBFF; }
+    .w-wrapper .homepage strong {
+      display: block;
+      color: black; }
+  .w-wrapper .files {
+    background: #AAAAAA;
+    max-height: 350px;
+    overflow: auto; }
+    .w-wrapper .files .files-header {
+      background: #909090;
+      padding: 5px; }
+    .w-wrapper .files .file {
+      display: block;
+      padding: 5px 5px; }
 
-.w-name{
-  display: inline-block;
-}
+@-webkit-keyframes wSlideTopIn {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
 
-.w-add-library{
-  background-color: #2ECC40;
-}
-.w-more-info{
-  background-color: #7FDBFF;
-}
-.w-add-library, .w-more-info{
-  text-transform: uppercase;
-  display: block;
-  font-size: 0.8em;
-  font-weight: bold;
-  padding: 3px 10px;
-  float: right;
-  color: white;
-  cursor: pointer;
-  margin-right: 5px;
-}
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+
+@keyframes wSlideTopIn {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }

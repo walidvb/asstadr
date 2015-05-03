@@ -1,0 +1,117 @@
+.w-wrapper{
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  max-width: 600px;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  animation: wSlideTopIn 0.3s ease-out;
+  *{
+    box-sizing: border-box;
+  }
+  ul{
+    margin: 0;
+    -webkit-padding-start: 0;
+  }
+  input{
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  #libraries{
+    max-height: 500px;
+    overflow: auto;
+  }
+  .lib{
+      list-style: none;
+      width: 100%;
+      border-bottom: 1px #0074D9 solid;
+    &.added .header{
+      background-color: #3D9970;
+    }
+      
+  }
+  .header{
+    padding: 5px;
+    background-color: #001f3f;
+    color: white;
+    cursor: pointer;
+    &:hover{
+      background-color: darken(#001f3f, 10%);
+    }
+  }
+  .name{
+    display: inline-block;
+  }
+  .add-library, .add{
+    background-color: #2ECC40;
+  }
+  .add{
+    padding: 3px 6px;
+    margin-right: 5px;
+  }
+  .more-info{
+    background-color: #7FDBFF;
+  }
+  .button{
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .add-library, .more-info{
+    padding: 3px 10px;
+    float: right;
+    @extend .button;
+    margin-right: 5px;
+  }
+  .more{
+    display: none;
+    padding: 5px;
+    background: #0074D9;
+  }
+  .desc{
+    display: inline-block;
+    vertical-align: top;
+    width: 57%;
+  }
+  .sidebar{
+   display: inline-block;
+   width: 40%;
+  }
+  .homepage{
+    margin-bottom: 10px;
+    a{
+      color: #7FDBFF;
+    }
+    strong{
+      display: block;
+      color: black;
+    }
+  }
+  .files{
+    background: #AAAAAA;
+    max-height: 350px;
+    overflow: auto;
+    .files-header{
+      background: darken(#AAAAAA, 10%);
+      padding: 5px;
+    }
+    .file{
+      display: block;
+      padding: 5px 5px;
+    }
+  }
+}
+
+@keyframes wSlideTopIn{
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
